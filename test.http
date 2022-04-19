@@ -1,0 +1,31 @@
+GET http://localhost:5000/recipes HTTP/1.1
+
+### Get a specific recipe ###
+
+GET http://localhost:5000/recipes/3 HTTP/1.1
+
+### Add a recipe ###
+
+POST http://localhost:5000/recipes HTTP/1.1
+content-Type: application/json
+
+{
+    "description": "This is a lovely cheese pizza recipe.",
+    "id": 3,
+    "name": "Lovely Cheese Pizza"
+}
+
+### Update a recipe ###
+
+PUT http://localhost:5000/recipes/3 HTTP/1.1
+content-Type: application/json
+
+{
+    "description": "This is a cheese pizza recipe.",
+    "id": 3,
+    "name": "Cheese Pizza"
+}
+
+### Delete a recipe ###
+
+DELETE http://localhost:5000/recipes/3 HTTP/1.1
