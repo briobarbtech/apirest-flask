@@ -2,7 +2,7 @@ GET http://localhost:5000/recipes HTTP/1.1
 
 ### Get a specific recipe ###
 
-GET http://localhost:5000/recipes/3 HTTP/1.1
+GET http://localhost:5000/recipes/2 HTTP/1.1
 
 ### Add a recipe ###
 

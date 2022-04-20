@@ -25,7 +25,10 @@ def get_all_recipes():
 ### Get a specific recipe ###
 @app.route('/recipes/<int:id>')
 def get_spec_recipe(id):
-    recipe = next((recipe for recipe in recipes if recipe['id']==id), None)
+    recipe = ""
+    for recipe in recipes:
+        if recipe['id']==id:
+            recipe=recipe
 
     if recipe:
         return jsonify(recipe), http.OK
