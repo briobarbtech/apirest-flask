@@ -38,7 +38,7 @@ def create_recipe():
     name = data.get('name')
     description = data.get('description')
     recipe = {
-        'id': len(recipes)+1,
+        'id': recipes[-1]['id']+1,
         'name': name,
         'description': description
     }
